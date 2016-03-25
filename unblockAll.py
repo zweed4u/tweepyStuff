@@ -2,7 +2,6 @@
 import tweepy
 from tweepy.auth import OAuthHandler
 
-'''@anon121792 application'''
 #enter the corresponding information from your Twitter application:
 CONSUMER_KEY = '';CONSUMER_SECRET = '';ACCESS_KEY = '';ACCESS_SECRET = '';
 auth = OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)

@@ -4,7 +4,6 @@
 import tweepy
 from tweepy.auth import OAuthHandler
 
-'''@anon121792 application'''
 #enter the corresponding information from your Twitter application:
 CONSUMER_KEY = '';CONSUMER_SECRET = '';ACCESS_KEY = '';ACCESS_SECRET = '';
 auth = OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
@@ -15,7 +14,7 @@ count=0
 for user_id in api.followers_ids():
 	user=api.get_user(id=user_id)
 	if user.protected==True:
-		#user is private - block that bih
+		#user is private - block 'em
 		api.create_block(id=user_id)
 		#block-unblock combo
 		api.destroy_block(id=user_id)
